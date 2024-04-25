@@ -65,3 +65,24 @@ body {
     height: 2px;
     top: 1em;
 }
+
+@media (min-width: 600px) {
+    .containerCactus {
+        margin-bottom: 10em;
+    }
+
+    .cactus {
+        left: 59em;
+        width: 500px;
+        border: 1px solid red;
+    }
+
+    .whyCactus h3 {
+        font-size: 16px;
+    }
+
+    .whyCactus p {
+        font-size: 13px;
+        width: 700px;
+    }
+}
