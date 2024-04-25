@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.helpcontainer{
+    position:relative;
+    border-radius: 7px;
+    box-shadow: 0 0 5px #5050507c;
+    top: 10em;
+    width: 80em;
+    left: 2em;
+    background-color: #91908e15;
+
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Espacio alrededor del contenido */
+    margin-bottom: 15em;
+}
+
+.helpcontainer ul li{
+    position:relative;
+    list-style:outside;
+    left: 2em;
+    width: 74em;
+    margin: 4px;
+}
+
+.helpcontainer hr {
+    position: relative;
+    width: 77em;
+    background-image: linear-gradient(90deg,transparent, #525151ce, transparent);
+    border: 0;
+    height: 1px;
+	top: 0em;
+
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+.FAQ div {
+    padding: 1em;
+    width: 78em;
+    border: 2px solid transparent;
+}
+
+.FAQ {
+    padding: 1em;
+}
+
+.guide {
+    position:relative;
+    top: 7em;
+    left: 3em;
+    width: 90em;
+}
+
+.guide h3 {
+    margin: 5px;
+    font-size: 1.3em;
+}

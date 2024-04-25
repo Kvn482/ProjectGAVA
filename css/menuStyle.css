@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #ffffff;
+}
+
+.container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    border: 1px solid #6969693b;
+    box-shadow: 0 0 5px #5050505b;
+}
+
+.navegacion {
+    width: 100%;
+    height: 96px;
+    background: #40e4562f;
+    padding-bottom: 20px;
+}
+
+.navegacion ul {
+    list-style: none;
+    text-align: center;
+}
+
+.menu > li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 2px 20px;
+    color: #353535;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menu img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: -45px;
+}
+
+.submenu {
+    position: absolute;
+    background: #333333;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.submenu li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu li a::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.menu li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.menu li a::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: #0000001a;
+    z-index: -1;
+    transition: transform .5s ease;
+}
