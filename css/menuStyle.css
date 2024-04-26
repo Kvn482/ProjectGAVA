@@ -36,11 +36,13 @@ header {
 .navegacion ul {
     list-style: none;
     text-align: center;
+    
 }
 
 .menu > li {
     position: relative;
     display: inline-block;
+    margin-left: 10px;
 }
 
 .menu > li > a {
@@ -50,6 +52,7 @@ header {
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
+    
 }
 
 .menu img {
@@ -64,7 +67,7 @@ header {
     width: 120%;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 1.5s;
+    transition: opacity 1s;
 }
 
 .submenu li a {
@@ -86,23 +89,22 @@ header {
     opacity: 1;
 }
 
-.menu li a::before {  
-    transform: scaleX(0);
-    transform-origin: bottom right;
-}
-
 .menu li a:hover::before {
     transform: scaleX(1);
-    transform-origin: bottom left;
+    
+}
+
+.menu li a::before {
+    transform: scaleX(0);
+    border-bottom: 1.5px solid black;
 }
 
 .menu li a::before {
     content: " ";
     display: block;
     position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
     inset: 0 0 0 0;
-    background: #0000001a;
+    
     z-index: -1;
     transition: transform .5s ease;
 }
