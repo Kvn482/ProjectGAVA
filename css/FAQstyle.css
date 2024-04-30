@@ -67,3 +67,9 @@ body {
     margin: 5px;
     font-size: 1.3em;
 }
+
+.FAQ .miniNopal {
+    position: relative;
+    height: 50px;
+    left: 95%;
+}

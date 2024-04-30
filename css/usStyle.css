@@ -8,7 +8,7 @@
     box-sizing: border-box;
     text-align: center;
 
-    top: 6.1em;
+    top: 5em;
     width: 100%;
 }
 
@@ -53,4 +53,37 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.MVContainer img{
+    border-radius: 5px;
+    width: 365px;
+}
+
+.ODS {
+    position: relative;
+    max-width: 850px;
+    height: 400px;
+    transform: translateX(-50%);
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.ODS img {
+    height: 160px;
+    width: 160px;
+    margin-right: 20px;
+}
+
+.containerODS {
+    position: relative;
+    width: 900px;
+    transform: translateX(-50%);
+    left: 50%;
+    margin-bottom: 5em;
+    color: #3b3b3b;
 }
