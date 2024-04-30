@@ -25,11 +25,13 @@ body {
     margin: 0 auto; /* Centra el contenedor horizontalmente */
     padding: 20px; /* Agrega espacio alrededor del contenido */
     box-sizing: border-box; /* Incluye el padding en el ancho y alto del contenedor */
+    margin-bottom: 5em;
 }
 
 .cactus {
     position: absolute;
     height: 31em;
+    left: 69em;
     top: -3em;
     transform: translateX(-50%); /* Corrige la posición relativa al 50% del contenedor */
 }
@@ -65,13 +67,13 @@ body {
 }
 
 
-@media (min-width: 1500px) {
+@media (max-width: 1536px) {
     .containerCactus {
         margin-bottom: 10em;
     }
 
     .cactus {
-        left: 62em;
+        left: 61em;
         width: 400px;
     }
 
@@ -86,7 +88,7 @@ body {
 }
 
 
-@media (min-width: 1366px) {
+@media (max-width: 1366px) {
     .containerCactus {
         margin-bottom: 10em;
     }
