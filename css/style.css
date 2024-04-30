@@ -85,3 +85,24 @@ body {
     }
 }
 
+
+@media (min-width: 1366px) {
+    .containerCactus {
+        margin-bottom: 10em;
+    }
+
+    .cactus {
+        width: 350px;
+        height: 31em;
+        left: 58em;
+    }
+
+    .whyCactus h3 {
+        font-size: 14px;
+    }
+
+    .whyCactus p {
+        font-size: 11px;
+        width: 700px;
+    }
+}
