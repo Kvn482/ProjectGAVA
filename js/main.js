@@ -4,7 +4,7 @@ var enlaces = document.querySelectorAll("#enlace");
 enlaces.forEach(function(enlace) {
     enlace.addEventListener("click", function(event) {
         event.preventDefault();
-
+        console.log(1000);
         var texto = this.textContent;
         navigator.clipboard.writeText(texto)
             .then(function() {

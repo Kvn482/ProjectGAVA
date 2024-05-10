@@ -1,35 +1,32 @@
 .us-Container {
     position: relative;
-    background-color: black;
     color: #ffffff;
     height: 21em;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-
-    top: 6.1em;
+    top: 5em;
     width: 100%;
+    background-image: url(/img/nopal-la-planta-emblema-de-mexico-que-ha-sobrevivido-a-los-anos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.us-Container hr {
+.us-Container div hr {
     position: relative;
-    background-color: #fff ;
     width: 40em;
-    top: 6em;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 0.5em;
+    margin-bottom: 1em;
 }
 
 .us-Container p{
     position: relative;
     font-style: italic;
-    top: 7em;
 }
 
 .us-Container h1{
     position: relative;
-    top: 2.5em;
 }
 
 .MV h1 {
@@ -53,4 +50,86 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.MVContainer img{
+    border-radius: 5px;
+    width: 365px;
+}
+
+.ODS {
+    position: relative;
+    max-width: 850px;
+    /* height: 400px; */
+    transform: translateX(-50%);
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.ODS img {
+    height: 160px;
+    width: 160px;
+    /* margin-right: 20px; */
+    margin-bottom: 1em;
+}
+
+.containerODS {
+    position: relative;
+    width: 900px;
+    transform: translateX(-50%);
+    left: 50%;
+    margin-bottom: 5em;
+    color: #3b3b3b;
+}
+
+@media (max-width: 768px) {
+    .MVContainer {
+        width: 100%;
+    }
+
+    .MV {
+        width: 45%;
+    }
+
+    .MV p {
+        width: 100%;
+    }
+    
+    .containerODS {
+        width: 100%;
+    }
+
+    /* .ODS {
+        height: fit-content;
+    } */
+
+}
+
+@media(max-width: 574px) {
+    .us-Container div hr {
+        width: 100%;
+    }
+
+    .us-Container p {
+        width: 100%;
+    }
+
+    .MVContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .MV {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 3em;
+    }
+
+    .MV p {
+        width: 100%;
+    }
 }

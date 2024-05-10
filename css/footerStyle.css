@@ -73,24 +73,13 @@ ul{
 	background-color: #ffffff;
 }
 
+.GAVA-Address {
+	width: 105%;
+}
+
 /*responsive*/
 
-@media(max-width: 767px){
-	.footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-	}
-}
-@media(max-width: 574px){
-	.footer-col{
-    width: 100%;
-	}
-}
-
 @media(max-width: 1536px) {
-	.footer{
-		height: 320px;
-	}
 
 	.footer-col h4{
 		font-size: 16px;
@@ -101,8 +90,22 @@ ul{
 	}
 }
 
-.GAVA-Address {
-	width: 105%;
+@media(max-width: 768px){
+	.footer-col{
+    	width: 50%;
+    	margin-bottom: 30px;
+	}
+
+	.GAVA-Address {
+		width: 70%;
+	}
 }
+@media(max-width: 574px){
+	.footer-col{
+    	width: 100%;
+	}
+}
+
+
 
 

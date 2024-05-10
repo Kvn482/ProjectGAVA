@@ -8,7 +8,6 @@
 }
 
 body {
-    background: #ffffff;
     line-height: 1.5;
     display: flex;
     flex-direction: column;
@@ -19,70 +18,349 @@ body {
     background-color: #91908e2d;
     box-shadow: 0 0 5px #2e2e2e5b;
     position: relative;
-    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 85px;
     width: 100%;
     height: 28em;
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    padding: 20px; /* Agrega espacio alrededor del contenido */
-    box-sizing: border-box; /* Incluye el padding en el ancho y alto del contenedor */
+    margin-bottom: 10em;
 }
 
-.cactus {
-    position: absolute;
-    height: 35em;
-    width: auto;
-    left: 70em; /* Centra el elemento horizontalmente */
-    top: -6.2em;
-    transform: translateX(-50%); /* Corrige la posición relativa al 50% del contenedor */
+.container-whyCactus {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .whyCactus {
-    position: absolute;
-    width: 850px;
-    height: 350px;
-    top: 40px;
-    left: 49%; /* Centra el elemento horizontalmente */
-    transform: translateX(-50%); /* Corrige la posición relativa al 50% del contenedor */
-}
-
-.whyCactus h3 {
-    font-size: 20px;
-    position: relative; /* Usa posición relativa para que el contenido fluya correctamente */
-    top: 3em;
-}
-
-.whyCactus p {
-    text-align: justify;
-    position: relative; /* Usa posición relativa para que el contenido fluya correctamente */
-    top: 5em;
-}
-
-.whyCactus hr {
     position: relative;
-    width: 250px;
-    background-image: linear-gradient(90deg, black, transparent);
-    border: 0;
-    height: 2px;
-    top: 1em;
+    width: 850px;
+    height: 360px;
+    padding: 10px;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-@media (min-width: 1500px) {
+.whyCactus div h1 {
+    font-size: 40px;
+}
+
+.cactus {
+    width: 330px;
+    height: 440px;
+}
+
+.containerPublicidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.containerProductos {
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin-bottom: 10em;
+    padding: 30px;
+}
+
+.containerProdCol {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.Prod-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Prod-column img {
+    width: 180px;
+    height: 180px;
+    margin: 40px 3px 40px 3px;
+    
+}
+
+.vertical-line {
+    border: none; 
+    border-left: 1px solid rgba(0, 0, 0, 0.322);
+    height: 100%;
+}
+
+.prod-Btn {
+    border: 1px solid #3ece21;
+    border-radius: 20px;
+    color: black;
+    text-decoration: none;
+    padding: 6px;
+    width: 130px;
+    text-align: center;
+    position: relative;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.prod-Btn:hover {
+    color: white;
+}
+
+.prod-Btn:hover::before {
+    transform: scaleX(1);
+    
+}
+
+.prod-Btn::before {
+    transform: scaleX(0);
+    
+}
+
+.prod-Btn::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    inset: 0 0 0 0;
+
+    z-index: -1;
+    transition: transform .4s ease;
+
+    border-radius: 20px;
+    background: #3ece21;
+}
+
+.containerHappy{
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.containerHappy h2{
+    font-size: 30px;
+    color: #0b3f01;
+
+}
+
+.containerHappy hr {
+    color: #0b3f01;
+}
+
+.containerTestimony {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.containerTestimony p {
+    font-size: 25px;
+    font-weight: 400;
+    width: 820px;
+}
+
+.containerTestimony img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.swiper {
+    position: relative;
+    width: 1200px;
+    margin-top: 2em;
+    margin-bottom: 5em;
+    cursor: grab;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.containerMarketin {
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5em;
+}
+
+.containerMarketin div {
+    background: #91908e2d;
+    width: 280px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.containerMarketin p {
+    height: 160px;
+    padding: 15px;
+}
+
+.containerMarketin img {
+    border: 1px solid #91908e2d;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+@media (max-width: 1366px) {
+    
+}
+
+@media (max-width: 768px) {
     .containerCactus {
-        margin-bottom: 10em;
+        height: 400px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .container-whyCactus {
+        width: 100%;
+        height: 100%;
+    }
+
+    .whyCactus {
+        top: 0;
+        width: 590px;
+        height: 100%;
+        justify-content: space-around;
+    }
+
+    .whyCactus div h1 {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .whyCactus div h3 {
+        font-size: 17px;
+    }
+
+    .whyCactus div p {
+        font-size: 13px;
     }
 
     .cactus {
-        left: 59em;
-        width: 500px;
+        display: none;
     }
 
-    .whyCactus h3 {
-        font-size: 16px;
-    }
-
-    .whyCactus p {
-        font-size: 13px;
+    .containerProductos {
         width: 700px;
+        padding: 30px;
+    }
+
+    .containerProdCol {
+        flex-direction: row;
+        justify-content:space-evenly;
+    }
+
+    .Prod-column {
+        height: 400px;
+        margin-bottom: 2em;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+
+    .containerMarketin {
+        width: 100%;
+    }
+
+    .containerMarketin div {
+        width: 240px;
+    }
+
+    .containerMarketin div p {
+        margin-bottom: 1em;
+        /* width: 80%; */
+    }
+
+    .containerTestimony {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 2em;
+        justify-content: space-evenly;
+    }
+
+    .containerTestimony p {
+        margin-top: 1em;
+        width: 100%;
+    }
+
+    .swiper {
+        margin-bottom: 3em;
+        width: 100%;
+    }
+}   
+
+@media(max-width: 574px) {
+    .containerPublicidad {
+        font-size: 15px;
+    }
+
+    .containerProductos {
+        width: 100%;
+    }
+
+    .containerProdCol {
+        flex-direction: column;
+    }
+
+    .containerMarketin {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerMarketin div p {
+        width: 80%;
+    }
+
+    .containerMarketin div {
+        width: 70%;
+        margin-bottom: 2em;
     }
 }
-

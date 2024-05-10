@@ -3,31 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Help - FAQ</title>
+	<link rel="shortcut icon" href="./img/GAVA-favicon.png" type="image/png">
+
 	<link rel="stylesheet" href="./css/alertStyle.css">
     <link rel="stylesheet" href="./css/menuStyle.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/footerStyle.css">
 	<link rel="stylesheet" href="./css/FAQstyle.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="https://kit.fontawesome.com/aa734ea2c2.js" crossorigin="anonymous"></script>
-    <title>Ayuda y FAQ</title>
 </head>
 <body>
-    <header>
-		<nav class="navegacion">
+	<header>
+		<ul class="sidebar">
+			<li><a class="closeMenu"><span class="material-symbols-outlined">close</span></a></li>
+			<li><a href="./index.html">Inicio</a></li>
+			<li><a href="./us.html">Nosotros</a></li>
+			<li><a href="./product-imper.html">Productos</a></li>
+			<li><a href="./FAQ.html">Ayuda</a></li>
+		</ul>
+
+		<div class="navbar">
+			<img class="Logo" src="./img/GAVA-Logo.png" alt="Nt">
 			<ul class="menu">
-				<li><img src="./img/pngegg.png" alt="Nt"></li>
-				<li><a href="./index.html">INICIO</a></li>
-				<li><a href="./us.html">NOSOTROS</a></li>
-				<li><a href="#">PRODUCTOS <i class="fa-solid fa-caret-down"></i></a>
+				<li><a href="./index.html">Inicio</a></li>
+				<li><a href="./us.html">Nosotros</a></li>
+				<li><a href="#">Productos <i class="fa-solid fa-caret-down" style="margin-left: 3px;"></i></a>
 					<ul class="submenu">
-						<li><a href="#">IMPERMEABLES</a></li>
+						<li><a href="./product-imper.html">Impermeables</a></li>
 
 					</ul>
 				</li>
-				<li><a href="./FAQ.html">FAQ</a></li>
-				
+				<li><a href="./FAQ.html">Ayuda</a></li>
 			</ul>
-		</nav>
+
+			<a class="menuMobile"><span class="material-symbols-outlined" style="color: black;">menu</span></a>
+		</div>
 	</header>
 
     <div class="guide">
@@ -56,7 +68,7 @@
                     <li>Con base a los m² de superficie y el rendimiento del material, realiza una estimación de la compra del producto que se va utilizar para impermeabilizar.</li>
                 </ul>
             </div>
-			
+			<img class="miniNopal" src="./img/pngegg.png" alt="No esta jalando">
         </div>
     </div>
 
@@ -89,7 +101,7 @@
 					<div class="social-links">
 						<a href="https://www.facebook.com/profile.php?id=61556944904971"><i class="fab fa-facebook-f"></i></a>
 						<a href="https://www.instagram.com/gava_mexico/"><i class="fab fa-instagram"></i></a>
-						<a href="https://www.youtube.com/watch?v=o-YBDTqX_ZU"><i class="fa-brands fa-tiktok"></i></a>
+						<a href="https://www.tiktok.com/@gavamexico?_t=8lwlqaGGtZm&_r=1"><i class="fa-brands fa-tiktok"></i></a>
 					</div>
 				</div>
 				<div class="footer-col">
@@ -106,5 +118,6 @@
    </footer>
 
    <script src="./js/main.js"></script>
+   <script src="./js/showBar.js"></script>
 </body>
 </html>
