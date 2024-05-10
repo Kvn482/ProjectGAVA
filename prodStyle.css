@@ -1,0 +1,250 @@
+
+
+.containerCampo-Cactus {
+    position: relative;
+    background-position: center;
+    background-image: url(../img/campo-nopales.jpg);
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    height: 800px;
+    width: 100%;
+    padding: 20px;
+    top: 5em;
+    margin-bottom: 10em;
+    display: flex;
+}
+
+.containerCampo-Cactus .Campo-Cactus {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 40px;
+    padding: 20px;
+
+    position: relative;
+    transform: translateX(-50%);
+    left: 72%;
+    width: 750px;
+    justify-content: center;
+}
+
+.Campo-Cactus h1 {
+    color: #3ece21;
+    font-size: 60px;
+}
+
+.containerProductos {
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1300px;
+    margin-bottom: 8em;
+    padding: 30px;
+}
+
+.Prod-column img {
+    width: 210px;
+    height: 210px;
+}
+
+.prod-Btn {
+    border: 1px solid #000200;
+    padding: 3px;
+    width: 200px;
+}
+
+.prod-Btn::before {
+    background: linear-gradient(180deg, #eeff05, transparent);
+}
+
+.prod-Btn img {
+    width: auto;
+    height: 40px;
+    margin: 0;
+}
+
+.container-beneficios {
+    border: 1px solid red;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 1200px;
+    margin-bottom: 5em;
+    font-size: 20px;
+    padding: 10px;
+    color: #3ece21;
+}
+
+.beneficios {
+    margin-top: 1em;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #5e5e5e;
+
+}
+
+.beneficios ul{
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style:inside;
+}
+
+.beneficios li {
+    width: 400px;
+    margin: 5px;
+}
+
+
+.beneficios li::marker {
+    color: #3ece21;
+}
+
+.container-especificaciones {
+    background: #5c5c5c27;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 100%;
+    padding: 10px;
+}
+
+.container-especificaciones h3 {
+    text-align: center;
+}
+
+.specs {
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    margin-top: 1em;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #5e5e5e;
+    width: 1200px;
+    margin-bottom: 4em;
+}
+
+.specs ul{
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style:inside;
+}
+
+.specs li {
+    width: 385px;
+    margin: 5px;
+}
+
+
+.specs li::marker {
+    color: #3ece21;
+}
+
+@media (max-width: 1366px) {
+    .containerCampo-Cactus .Campo-Cactus {
+        width: 700px;
+        left: 75%;
+        font-size: 35px;
+        text-align: end;
+    }
+
+    .Campo-Cactus h1 {
+        color: #3ece21;
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerCampo-Cactus .Campo-Cactus {
+        width: 485px;
+        left: 70%;
+        font-size: 35px;
+    }
+
+
+    .containerProductos {
+        width: 700px;
+        padding: 30px;
+    }
+
+    .containerProdCol {
+        flex-direction: row;
+        justify-content:space-evenly;
+    }
+
+    .Prod-column {
+        height: 400px;
+        margin-bottom: 5em;
+    }
+
+    .container-beneficios {
+        width: 100%;
+    }
+
+    .beneficios ul {
+        max-height: 300px;
+    }
+
+    .beneficios li {
+        width: 360px;
+    }
+
+    .container-especificaciones {
+        width: 100%;
+    }
+    
+    .specs {
+        width: 100%;
+    }
+    
+    .specs ul{
+        max-height: 300px;
+    }
+    
+    .specs li {
+        width: 350px;
+    }
+}
+
+@media(max-width: 574px) {
+    .containerCampo-Cactus .Campo-Cactus {
+        width: 370px;
+        left: 55%;
+        font-size: 30px;
+    }
+
+    .containerProductos {
+        width: 100%;
+    }
+
+    .containerProdCol {
+        flex-direction: column;
+    }
+
+    .beneficios ul {
+        max-height: fit-content;
+    }
+
+    .beneficios li {
+        width: 100%;
+    }
+
+    .specs ul{
+        max-height: fit-content;
+    }
+    
+    .specs li {
+        width: 100%;
+    }
+}
