@@ -3,7 +3,7 @@
 .containerCampo-Cactus {
     position: relative;
     background-position: center;
-    background-image: url(/img/campo-nopales.jpg);
+    background-image: url(../img/campo-nopales.jpg);
     background-color: #cccccc;
     background-repeat: no-repeat;
     background-size: cover;
