@@ -7,7 +7,7 @@
 .row{
 	display: flex;
 	flex-wrap: wrap;
-	
+	justify-content: space-evenly;
 }
 ul{
 	list-style: none;
@@ -81,12 +81,46 @@ ul{
 
 @media(max-width: 1536px) {
 
-	.footer-col h4{
+	/* .footer-col h4{
 		font-size: 16px;
 	}
 
 	.footer-col ul li a{
 		font-size: 13px;
+	} */
+}
+
+@media (max-width: 1024px) {
+	.row{
+		justify-content: space-evenly;
+	}
+
+	.footer-col{
+		/* border: 1px solid red; */
+    	/* width: 25%; */
+		/* width: 34%; */
+		width: 35%;
+    	margin-bottom: 30px;
+	}
+
+	.footer-col ul li a:hover{
+		padding-left: 0px;
+	}
+
+	.GAVA-Address {
+		width: 85%;
+	}
+}
+
+@media (max-width: 820px) {
+	/* .row{
+		justify-content: space-evenly;
+	} */
+
+	.footer-col{
+    	/* width: 25%; */
+		width: 36%;
+    	margin-bottom: 30px;
 	}
 }
 

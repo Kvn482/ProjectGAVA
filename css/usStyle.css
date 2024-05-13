@@ -32,6 +32,7 @@
 .MV h1 {
     margin-top: 1em;
     color: #3b3b3b;
+    /* color: #0b3f01; */
     
 }
 
@@ -84,6 +85,16 @@
     left: 50%;
     margin-bottom: 5em;
     color: #3b3b3b;
+}
+
+@media (max-width: 1024px) {
+    .MVContainer {
+        width: 100%;
+    }
+
+    .containerODS {
+        width: 98%;
+    }
 }
 
 @media (max-width: 768px) {

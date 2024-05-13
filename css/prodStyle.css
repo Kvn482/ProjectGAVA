@@ -75,6 +75,7 @@
     width: 1200px;
     margin-bottom: 5em;
     font-size: 20px;
+    padding: 10px;
     color: #3ece21;
 }
 
@@ -111,6 +112,7 @@
     transform: translateX(-50%);
     left: 50%;
     width: 100%;
+    padding: 10px;
 }
 
 .container-especificaciones h3 {
@@ -162,13 +164,81 @@
     }
 }
 
+@media (max-width: 1180px) {
+    .containerCampo-Cactus .Campo-Cactus {
+        width: 700px;
+        left: 68%;
+        font-size: 35px;
+        text-align: end;
+    }
+
+    .containerProductos {
+        width: 85%;
+    }
+    
+    .containerProdCol {
+        justify-content:space-evenly;
+    }
+    
+    .Prod-column{
+        margin-bottom: 3em;
+    }
+    
+    .vertical-line {
+        display: none;
+    }
+
+    .container-beneficios {
+        width: 100%;
+    }
+
+    .beneficios ul {
+        max-height: 300px;
+    }
+
+    .beneficios li {
+        width: 450px;
+    }
+
+    .specs {
+        width: 100%;
+    }
+    
+    .specs ul{
+        max-height: 300px;
+    }
+    
+    .specs li {
+        width: 450px;
+    }
+}
+
+@media (max-width: 1024px) {  
+    .containerCampo-Cactus .Campo-Cactus {
+        left: 50%;
+        font-size: 35px;
+        text-align: end;
+    }
+    
+    .Campo-Cactus h1 {
+        font-size: 55px;
+    }
+
+    .beneficios li {
+        width: 360px;
+    }
+    
+    .specs li {
+        width: 350px;
+    }
+}
+
 @media (max-width: 768px) {
     .containerCampo-Cactus .Campo-Cactus {
         width: 485px;
-        left: 70%;
+        left: 68%;
         font-size: 35px;
     }
-
 
     .containerProductos {
         width: 700px;
@@ -191,10 +261,12 @@
 
     .beneficios ul {
         max-height: 300px;
+        
     }
 
     .beneficios li {
-        width: 360px;
+        /* width: 360px; */
+        width: 350px;
     }
 
     .container-especificaciones {
@@ -214,10 +286,10 @@
     }
 }
 
-@media(max-width: 574px) {
+@media (max-width: 667px) {
     .containerCampo-Cactus .Campo-Cactus {
         width: 370px;
-        left: 55%;
+        left: 68%;
         font-size: 30px;
     }
 
@@ -243,5 +315,45 @@
     
     .specs li {
         width: 100%;
+    }
+}
+
+@media(max-width: 574px) {
+    .containerCampo-Cactus .Campo-Cactus {
+        width: 370px;
+        left: 68%;
+        font-size: 30px;
+    }
+
+    .containerProductos {
+        width: 100%;
+    }
+
+    .containerProdCol {
+        flex-direction: column;
+    }
+
+    /* .beneficios ul {
+        max-height: fit-content;
+    }
+
+    .beneficios li {
+        width: 100%;
+    }
+
+    .specs ul{
+        max-height: fit-content;
+    }
+    
+    .specs li {
+        width: 100%;
+    } */
+}
+
+@media(max-width: 490px) {
+    .containerCampo-Cactus .Campo-Cactus {
+        left: 50%;
+        width: 100%;
+        font-size: 25px;
     }
 }
