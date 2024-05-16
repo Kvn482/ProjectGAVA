@@ -15,7 +15,7 @@
 
 .us-Container div hr {
     position: relative;
-    width: 40em;
+    max-width: 40em;
     margin-top: 0.5em;
     margin-bottom: 1em;
 }
@@ -42,7 +42,7 @@
 
 .MVContainer {
     position: relative;
-    width: 1000px;
+    max-width: 1000px;
     left: 50%;
     top: 10em;
     margin-bottom: 15em;
@@ -61,7 +61,6 @@
 .ODS {
     position: relative;
     max-width: 850px;
-    /* height: 400px; */
     transform: translateX(-50%);
     left: 50%;
     display: flex;
@@ -74,73 +73,37 @@
 .ODS img {
     height: 160px;
     width: 160px;
-    /* margin-right: 20px; */
     margin-bottom: 1em;
 }
 
 .containerODS {
     position: relative;
-    width: 900px;
+    max-width: 900px;
     transform: translateX(-50%);
     left: 50%;
     margin-bottom: 5em;
     color: #3b3b3b;
+    padding: 10px;
 }
 
 @media (max-width: 1024px) {
-    .MVContainer {
-        width: 100%;
-    }
 
-    .containerODS {
-        width: 98%;
-    }
 }
 
 @media (max-width: 768px) {
-    .MVContainer {
-        width: 100%;
-    }
-
-    .MV {
-        width: 45%;
-    }
-
-    .MV p {
-        width: 100%;
-    }
-    
-    .containerODS {
-        width: 100%;
-    }
-
-    /* .ODS {
-        height: fit-content;
-    } */
-
-}
-
-@media(max-width: 574px) {
-    .us-Container div hr {
-        width: 100%;
-    }
-
-    .us-Container p {
-        width: 100%;
-    }
-
     .MVContainer {
         flex-direction: column;
         align-items: center;
     }
 
     .MV {
+
         text-align: center;
-        width: 100%;
         margin-bottom: 3em;
     }
 
     .MV p {
         width: 100%;
     }
+
 }

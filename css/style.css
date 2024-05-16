@@ -30,7 +30,7 @@ body {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 1350px;
+    max-width: 1350px;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -40,7 +40,7 @@ body {
 
 .whyCactus {
     position: relative;
-    width: 850px;
+    max-width: 850px;
     height: 100%;
     padding: 10px;
     /* top: 40px; */
@@ -68,13 +68,15 @@ body {
 }
 
 .containerProductos {
+    border: 1px solid red;
     position: relative;
     transform: translateX(-50%);
     left: 50%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin-bottom: 10em;
     padding: 30px;
 }
@@ -171,7 +173,6 @@ body {
 
 .containerTestimony {
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 1em;
@@ -180,13 +181,13 @@ body {
 .containerTestimony p {
     font-size: 25px;
     font-weight: 400;
-    width: 820px;
+    max-width: 820px;
 }
 
 .swiper {
     position: relative;
-    width: 1200px;
-    /* width: 98%; */
+    max-width: 1200px;
+    width: 100%;
     margin-top: 2em;
     margin-bottom: 5em;
     cursor: grab;
@@ -210,42 +211,96 @@ body {
     object-fit: cover;
 }
 
-.containerMarketin {
+.containerCard {
     position: relative;
     transform: translateX(-50%);
     left: 50%;
-    width: 1000px;
+    max-width: 1000px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    cursor: pointer;
     margin-bottom: 5em;
+    transition: background 0.6s ease;
 }
 
-.containerMarketin div {
-    background: #91908e2d;
-    width: 280px;
-    height: 370px;
+.card {
+    position: relative;
+    width: 195px;
+    height: 285px;
+    /* background: #313131; */
+    /* background: linear-gradient(90deg, #69696998, #424242bd); */
+    /* background: radial-gradient(circle, #66666698, #3131319d, #313131); */
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    text-align: center;
+    justify-content: center;
+    color: lightgray;
+    transition: 0.2s ease-in-out;
 }
 
-.containerMarketin p {
-    height: 160px;
+.img {
+    position: absolute;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+    border-radius: 25px;
+    height: 40%;
+}
+
+.textBox {
     padding: 15px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    transition: 0.2s ease-in-out;
+    z-index: 2;
 }
 
-.containerMarketin img {
-    border: 1px solid #91908e2d;
-    border-radius: 15px;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+.textBox > .text {
+    font-weight: bold;
 }
 
+.textBox > .head {
+    font-size: 20px;
+}
 
+.textBox > span {
+    font-size: 12px;
+    color: lightgray;
+}
+
+.card:hover > .textBox {
+    opacity: 1;
+}
+
+.card:hover > .img {
+    height: 65%;
+    filter: blur(7px);
+    animation: anim 3s infinite;
+}
+
+@keyframes anim {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-20px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.card:hover {
+    background: radial-gradient(circle, #c1dfc39d, #0352079d, #313131);
+    transform: scale(1.04) rotate(-1deg);
+}
 
 @media (max-width: 1366px) {  
     .container-whyCactus {
@@ -256,12 +311,7 @@ body {
 @media (max-width: 1024px) {
 
     .container-whyCactus {
-        width: 100%;
         padding: 5px;
-    }
-    
-    .whyCactus {
-        width: inherit;
     }
     
     .whyCactus div h1 {
@@ -275,14 +325,6 @@ body {
     .containerTestimony {
         flex-direction: column;
     }
-
-    .swiper {
-        width: 98%;
-    }
-
-    .containerProductos {
-        width: 85%;
-    }
     
     .containerProdCol {
         justify-content:space-evenly;
@@ -295,26 +337,16 @@ body {
     .vertical-line {
         display: none;
     }
-
-    .containerMarketin {
-        width: 100%;
-    }
-
-    .containerMarketin div {
-        width: 30%;
-    }
     
 }
 
 @media (max-width: 768px) {
     .containerCactus {
         height: 400px;
-        width: 100%;
         text-align: center;
     }
     
     .container-whyCactus {
-        width: 100%;
         height: 100%;
     }
 
@@ -343,8 +375,6 @@ body {
     }
 
     .containerProductos {
-        /* width: 700px; */
-        width: 100%;
         padding: 30px;
     }
 
@@ -362,62 +392,29 @@ body {
         display: none;
     }
 
-    .containerMarketin {
-        width: 100%;
-    }
-
-    .containerMarketin div {
-        width: 240px;
-    }
-
-    .containerMarketin div p {
-        margin-bottom: 1em;
-        /* width: 80%; */
-    }
-
     .containerTestimony {
         flex-direction: column;
-        width: 100%;
         margin-bottom: 2em;
         justify-content: space-evenly;
-    }
-
-    .containerTestimony p {
-        margin-top: 1em;
-        width: 100%;
-    }
-
-    .swiper {
-        margin-bottom: 3em;
-        width: 100%;
     }
 }   
 
 @media(max-width: 574px) {
-    .containerPublicidad {
-        font-size: 15px;
+    .containerCactus {
+        height: 450px;
     }
 
-    .containerProductos {
-        width: 100%;
+    .containerPublicidad {
+        font-size: 15px;
     }
 
     .containerProdCol {
         flex-direction: column;
     }
 
-    .containerMarketin {
+    .containerCard {
         flex-direction: column;
         align-items: center;
-    }
-
-    .containerMarketin div p {
-        width: 80%;
-    }
-
-    .containerMarketin div {
-        width: 70%;
-        margin-bottom: 2em;
     }
 }
 
