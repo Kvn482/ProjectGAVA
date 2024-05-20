@@ -343,11 +343,11 @@ body {
 @media (max-width: 768px) {
     .containerCactus {
         height: 400px;
-        text-align: center;
     }
     
     .container-whyCactus {
         height: 100%;
+        text-wrap: pretty;
     }
 
     .whyCactus {
