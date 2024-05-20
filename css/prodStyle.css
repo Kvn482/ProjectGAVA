@@ -85,8 +85,8 @@
     padding: 10px;
     font-size: 18px;
     font-weight: 500;
-    color: #5e5e5e;
-
+    /* color: #5e5e5e; */
+    color: #5e5e5e2d;
 }
 
 .beneficios ul{
@@ -100,6 +100,10 @@
 .beneficios li {
     max-width: 400px;
     margin: 5px;
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-image: linear-gradient(90deg, #5e5e5e, #5e5e5e);
 }
 
 
@@ -128,7 +132,8 @@
     padding: 10px;
     font-size: 18px;
     font-weight: 500;
-    color: #5e5e5e;
+    /* color: #5e5e5e; */
+    color: #5e5e5e2d;
     max-width: 1200px;
     margin-bottom: 4em;
 }
@@ -144,11 +149,39 @@
 .specs li {
     max-width: 385px;
     margin: 5px;
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-image: linear-gradient(90deg, #5e5e5e, #5e5e5e);
 }
 
 
 .specs li::marker {
     color: #3ece21;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        /* scale: 25%; */
+    }
+  
+    to {
+        opacity: 1;
+        /* scale: 100%; */
+        background-size: 100% 100%;
+    }
+}
+  
+.beneficios li, .specs li {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 40%;
+    animation-fill-mode: both;
 }
 
 @media (max-width: 1366px) {

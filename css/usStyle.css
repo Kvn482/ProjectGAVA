@@ -97,13 +97,14 @@
     }
 
     .MV {
-
-        text-align: center;
+        /* text-align: center; */
+        padding: 20px;
         margin-bottom: 3em;
     }
 
     .MV p {
         width: 100%;
+        text-wrap: pretty;
     }
 
 }
