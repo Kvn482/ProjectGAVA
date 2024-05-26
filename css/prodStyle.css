@@ -181,7 +181,7 @@
     animation-name: show;
 
     animation-range: entry 25% cover 40%;
-    animation-fill-mode: both;
+    animation-fill-mode:both;
 }
 
 @media (max-width: 1366px) {

@@ -18,3 +18,12 @@ enlaces.forEach(function(enlace) {
             });
     });
 });
+
+const menuIsSelected = document.querySelectorAll(".menu a");
+
+menuIsSelected.forEach(item => {
+    item.addEventListener('click', (e) => {
+        menuIsSelected.forEach(link => link.classList.remove('selected'));
+        e.currentTarget.classList.add('selected')
+    })
+})
