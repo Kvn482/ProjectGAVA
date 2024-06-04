@@ -85,7 +85,7 @@
 .dataSheet {
     border: 1px solid #b8b7b7;
     border-radius: 10px;
-    width: 400px;
+    max-width: 400px;
     height: 90%;
     display: flex;
     flex-direction: column;
@@ -422,6 +422,15 @@
     
     .specs li {
         width: 100%;
+    }
+
+    .dataSheetContainer {
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .dataSheet {
+        margin-bottom: 25px;
     }
 }
 
